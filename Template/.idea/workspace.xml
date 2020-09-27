@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="17a32ffc-92a4-4bfe-8753-8f92c50033d3" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+        <option value="CSS File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectId" id="1i4k8BpGm59QxJduEeYh2T3fgcC" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/assets/css" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="settings.editor.selected.configurable" value="web-ide.project.structure" />
+    <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Usuario\Downloads\estore\assets\css" />
+      <recent name="C:\Users\Usuario\Downloads\estore" />
+      <recent name="C:\Users\Usuario\Downloads\estore\assets" />
+    </key>
+  </component>
+  <component name="RunManager" selected="JavaScript Debug.login.html">
+    <configuration name="Prueba.html" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/estore/eCommerce Doc/Prueba.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="login.html" type="JavascriptDebugType" nameIsGenerated="true" uri="http://localhost:63342/estore/login.html" useBuiltInWebServerPort="true">
+      <method v="2" />
+    </configuration>
+    <configuration name="pruebajava.js" type="NodeJSConfigurationType" temporary="true" nameIsGenerated="true" path-to-js-file="$PROJECT_DIR$/eCommerce Doc/pruebajava.js" working-dir="$PROJECT_DIR$/eCommerce Doc">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Node.js.pruebajava.js" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="SvnConfiguration">
+    <configuration>C:\Users\Usuario\AppData\Roaming\Subversion</configuration>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="17a32ffc-92a4-4bfe-8753-8f92c50033d3" name="Default Changelist" comment="" />
+      <created>1601174090095</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1601174090095</updated>
+      <workItem from="1601174091131" duration="875000" />
+      <workItem from="1601175010755" duration="4928000" />
+      <workItem from="1601248967484" duration="16000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="LAST_COMMIT_MESSAGE" value="" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="1829" y="119" key="FileChooserDialogImpl" timestamp="1601228646922">
+      <screen x="1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="1829" y="119" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1601228646922" />
+    <state x="1550" y="9" key="SettingsEditor" timestamp="1601228809041">
+      <screen x="1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="1550" y="9" key="SettingsEditor/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1601228809041" />
+    <state x="1756" y="0" width="585" height="728" key="find.popup" timestamp="1601229619100">
+      <screen x="1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="1756" y="0" width="585" height="728" key="find.popup/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1601229619100" />
+    <state x="1879" y="155" key="svn.repositoryBrowser" timestamp="1601174824337">
+      <screen x="1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="1879" y="155" key="svn.repositoryBrowser/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1601174824337" />
+    <state x="1837" y="138" key="svn4idea.import.options" timestamp="1601174787037">
+      <screen x="1366" y="0" width="1366" height="728" />
+    </state>
+    <state x="1837" y="138" key="svn4idea.import.options/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1601174787037" />
+  </component>
+</project>
