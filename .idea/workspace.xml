@@ -19,7 +19,22 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99f8f842-cd6e-4b0d-8e52-64d80b3166ae" name="Default Changelist" comment="" />
+    <list default="true" id="99f8f842-cd6e-4b0d-8e52-64d80b3166ae" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/Template/assets/img/feria.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Template/assets/img/feria10.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Template/assets/img/feria11.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Template/assets/img/feria12.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Template/assets/img/feria2.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Template/assets/img/feria3.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Template/assets/img/feria3.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Template/assets/img/feria4.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Template/assets/img/feria5.jfif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Template/assets/img/feria6.jfif" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template/assets/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/Template/assets/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template/contact.html" beforeDir="false" afterPath="$PROJECT_DIR$/Template/contact.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Template/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Template/login.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,7 +44,10 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="ProjectId" id="1i4ESvMgaZTtLxOu5KnOEKhpsoN" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <OptionsSetting value="false" id="Update" />
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -37,13 +55,18 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Eshop/src/assets" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/Template/assets/img" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Usuario\Documents\Eshop\Template\assets\img" />
+    </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\Usuario\Documents\Eshop\Template\assets\img" />
+      <recent name="C:\Users\Usuario\Documents\Eshop\Template\assets\img\tranding_item" />
       <recent name="C:\Users\roger\Desktop\Work\Bases2\Eshop\Eshop\src\assets" />
     </key>
   </component>
@@ -89,6 +112,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="223" y="87" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1601159514657" />
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1601434089345">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1601434089345" />
     <state x="277" y="77" key="SettingsEditor" timestamp="1601159734844">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
