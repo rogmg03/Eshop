@@ -40,11 +40,13 @@
     <property name="last_opened_file_path" value="$PROJECT_DIR$/Eshop/src/assets" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
+    <property name="ts.external.directory.path" value="C:\Users\roger\Desktop\Work\Bases2\Eshop\Eshop\node_modules\typescript\lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\roger\Desktop\Work\Bases2\Eshop\Eshop\src\assets" />
+      <recent name="C:\Users\roger\Desktop\Work\Bases2\Eshop\Eshop\src\assets\img" />
     </key>
   </component>
   <component name="RunManager">
@@ -66,6 +68,7 @@
       <updated>1601158475025</updated>
       <workItem from="1601158482572" duration="1200000" />
       <workItem from="1601159908179" duration="1294000" />
+      <workItem from="1602219046700" duration="6089000" />
     </task>
     <servers />
   </component>
@@ -93,5 +96,21 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="77" key="SettingsEditor/0.0.1536.864/1920.0.1920.1080@0.0.1536.864" timestamp="1601159734844" />
+    <state x="425" y="197" key="run.anything.popup" timestamp="1602223451717">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="425" y="197" key="run.anything.popup/0.0.1536.864@0.0.1536.864" timestamp="1602223451717" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="javascript">
+          <url>file://$PROJECT_DIR$/Eshop/src/app/contact/contact.component.html</url>
+          <line>70</line>
+          <properties lambdaOrdinal="-1" />
+          <option name="timeStamp" value="1" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
