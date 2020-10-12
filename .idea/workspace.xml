@@ -21,11 +21,7 @@
   <component name="ChangeListManager">
     <list default="true" id="99f8f842-cd6e-4b0d-8e52-64d80b3166ae" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eshop/src/app/Carro de compras/carrocompras.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eshop/src/app/Carro de compras/carrocompras.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eshop/src/app/Confirmacion/Confirmacion.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eshop/src/app/Confirmacion/Confirmacion.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eshop/src/app/DetalleProducto/DetalleProducto.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eshop/src/app/DetalleProducto/DetalleProducto.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Eshop/src/app/Pago/Pago.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eshop/src/app/Pago/Pago.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eshop/src/app/loginview/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eshop/src/app/loginview/login.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,7 +43,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Eshop/src/app/Productos" />
+    <property name="last_opened_file_path" value="$USER_HOME$/Desktop/RestService" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="settings.editor.selected.configurable" value="settings.nodejs" />
     <property name="vue.rearranger.settings.migration" value="true" />
@@ -114,10 +110,11 @@
       <screen x="1366" y="0" width="1366" height="728" />
     </state>
     <state x="1797" y="166" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1366.728/1366.0.1366.728@1366.0.1366.728" timestamp="1602131622972" />
-    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1601434089345">
+    <state x="463" y="119" key="FileChooserDialogImpl" timestamp="1602453276401">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
     <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728/1366.0.1366.728@0.0.1366.728" timestamp="1601434089345" />
+    <state x="463" y="119" key="FileChooserDialogImpl/0.0.1366.728@0.0.1366.728" timestamp="1602453276401" />
     <state x="277" y="77" key="SettingsEditor" timestamp="1601159734844">
       <screen x="0" y="0" width="1536" height="864" />
     </state>
