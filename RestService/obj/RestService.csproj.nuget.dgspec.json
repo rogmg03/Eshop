@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\enFeriaTec-master\\RestService\\RestService.csproj": {}
+    "E:\\Eshop\\RestService\\RestService.csproj": {}
   },
   "projects": {
-    "E:\\enFeriaTec-master\\RestService\\RestService.csproj": {
+    "E:\\Eshop\\RestService\\RestService.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\enFeriaTec-master\\RestService\\RestService.csproj",
+        "projectUniqueName": "E:\\Eshop\\RestService\\RestService.csproj",
         "projectName": "RestService",
-        "projectPath": "E:\\enFeriaTec-master\\RestService\\RestService.csproj",
+        "projectPath": "E:\\Eshop\\RestService\\RestService.csproj",
         "packagesPath": "C:\\Users\\jonag\\.nuget\\packages\\",
-        "outputPath": "E:\\enFeriaTec-master\\RestService\\obj\\",
+        "outputPath": "E:\\Eshop\\RestService\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\jonag\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -41,6 +41,10 @@
             "Microsoft.ApplicationInsights.AspNetCore": {
               "target": "Package",
               "version": "[2.14.0, )"
+            },
+            "Microsoft.AspNet.WebApi.Cors": {
+              "target": "Package",
+              "version": "[5.2.7, )"
             },
             "Newtonsoft.Json": {
               "target": "Package",

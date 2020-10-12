@@ -1,11 +1,22 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿using System.Net.Http;
+using System.Web.Http;
+using System.Web.Http.Cors;
 
-namespace RestService.Controllers
+namespace WebService.Controllers
 {
-    public class Class
+   
+    [EnableCors(origins: "*", headers: "*", methods: "*", exposedHeaders: "X-Custom-Header")]
+    [MyCorsPolicy]
+    public class TestController : ApiController
     {
+        public HttpResponseMessage Get()
+        {
+            var resp = new HttpResponseMessage()
+            {
+                Content = new StringContent("GET: Test message")
+            };
+            resp.Headers.Add("X-Custom-Header", "hello");
+            return resp;
+        }
     }
 }
