@@ -1,6 +1,7 @@
 using System;
 
-namespace Models{
+namespace RestServices.Models
+{
     public class Farmers{
         
         public int id {get; set;}           // Número Cédula

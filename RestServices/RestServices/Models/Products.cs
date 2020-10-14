@@ -1,6 +1,6 @@
 using System;
-
-namespace Models{
+namespace RestServices.Models
+{
     public class Products{
         public string name {get; set;}     // Nombre
         public string category {get; set;} // Categoria

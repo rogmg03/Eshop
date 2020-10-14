@@ -4,13 +4,40 @@ using System.Linq;
 using System.Net;
 using System.Net.Http;
 using System.Web.Http;
-using Models;
 using Newtonsoft.Json;
+using RestServices.Models;
+
 
 namespace RestServices.Controllers
 {
-    public class FamerController : ApiController
+    public class FarmerController : ApiController
     {
+
+
+        [Route("api/farmers/Post")]
+        [HttpPost]
+
+        public IHttpActionResult SetFarmer(Farmers model)
+        {
+
+            var farmer=new Models. Farmers();
+            farmer.id = model.id;
+             farmer.name = model.name;
+            farmer.lastName = model.lastName;
+            farmer.address = model.address;
+            farmer.sinpe = model.sinpe;
+             farmer.userName = model.userName;
+            farmer.password = model.password;
+            farmer.phone = model.phone;
+            farmer.places = model.places;
+            string json = JsonConvert.SerializeObject(farmer);
+
+            //write string to file
+            System.IO.File.WriteAllText(@".Eshop\RestServices\RestServices\JsonDataBase\farmers.json", json);
+
+             return Ok("Se insertó el agricultor");
+
+        }
 
 
         [Route("api/farmers")]
@@ -20,12 +47,9 @@ namespace RestServices.Controllers
         {
             int size = getSize();
             Farmers[] farmers = new Farmers[size];
-            string json = System.IO.File.ReadAllText(@"./JsonDataBase/farmers.json");
+            string json = System.IO.File.ReadAllText(@".Eshop\RestServices\RestServices\JsonDataBase\farmers.json");
             dynamic array = JsonConvert.DeserializeObject(json);
-            // List<Farmers> farmers = new List<Farmers>();
-            // foreach(var element in array){    
-            //     farmers.Add(farmer);
-            // } 
+           
             for (int index = 0; index < size; index++)
             {
                 Farmers farmer = JsonConvert.DeserializeObject<Farmers>(array[index].ToString());
@@ -35,12 +59,12 @@ namespace RestServices.Controllers
         }
 
 
-        [Route("api/CountUsers")]
+        [Route("api /CountUsers")]
         [HttpGet]
 
         public int getSize()
         {
-            string json = System.IO.File.ReadAllText(@"./JsonDataBase/farmers.json");
+            string json = System.IO.File.ReadAllText(@".Eshop\RestServices\RestServices\JsonDataBase\farmers.json");
             dynamic array = JsonConvert.DeserializeObject(json);
             return array.Count;
         }
@@ -52,7 +76,7 @@ namespace RestServices.Controllers
         {
             int size = getSize();
             string[] farmers = new string[size];
-            string json = System.IO.File.ReadAllText(@"./JsonDataBase/farmers.json");
+            string json = System.IO.File.ReadAllText(@".Eshop\RestServices\RestServices\JsonDataBase\farmers.json");
             dynamic array = JsonConvert.DeserializeObject(json);
             // List<Farmers> farmers = new List<Farmers>();
             // foreach(var element in array){    
@@ -66,32 +90,44 @@ namespace RestServices.Controllers
             return farmers;
         }
 
-
-        public IEnumerable<string> Get()
+        [Route("api/actualizar")]
+        [HttpPut]
+        public IHttpActionResult Update(Farmers farmers)
         {
-            return new string[] { "value1", "value2" };
+            int size = getSize();
+          
+            string json = System.IO.File.ReadAllText(@".Eshop\RestServices\RestServices\JsonDataBase\farmers.json");
+
+            dynamic array = JsonConvert.DeserializeObject(json);
+            
+            for (int index = 0; index < size; index++)
+            {
+                Farmers farmer = JsonConvert.DeserializeObject<Farmers>(array[index].ToString());
+                if (farmer.id == farmers.id)
+                {
+                    //errores de validaciones
+                    //write string to file
+                    System.IO.File.WriteAllText(@".Eshop\RestServices\RestServices\JsonDataBase\farmers.json", json);
+
+
+
+
+
+                }
+              
+             
+
+
+
+
+                }
+            return Ok("Se insertó el agricultor");
+
+
         }
 
-        // GET api/values/5
-        public string Get(int id)
-        {
-            return "value";
-        }
-
-        // POST api/values
-        public void Post([FromBody] string value)
-        {
-        }
-
-        // PUT api/values/5
-        public void Put(int id, [FromBody] string value)
-        {
-        }
-
-        // DELETE api/values/5
-        public void Delete(int id)
-        {
-        }
+       
     }
 }
+
 
