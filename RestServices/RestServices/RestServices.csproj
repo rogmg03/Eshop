@@ -204,6 +204,7 @@
     <Content Include="JsonDataBase\categoyManagement.json" />
     <Content Include="JsonDataBase\farmers.json" />
     <Content Include="JsonDataBase\products.json" />
+    <Content Include="JsonDataBase\customer.json" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />

@@ -1,0 +1,11 @@
+{
+  {
+    "id": 1,
+    "name": "Marco",
+    "lastName": "Rivera",
+    "address": "Cartago",
+    "phone": 2323334,
+    "userName": "mrivera",
+    "password": 1234
+  }
+}

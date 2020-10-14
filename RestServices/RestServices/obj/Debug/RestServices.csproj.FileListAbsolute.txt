@@ -88,8 +88,8 @@ E:\Eshop\RestServices\RestServices\bin\es\System.Web.Razor.resources.dll
 E:\Eshop\RestServices\RestServices\bin\es\System.Web.WebPages.resources.dll
 E:\Eshop\RestServices\RestServices\bin\es\System.Web.WebPages.Deployment.resources.dll
 E:\Eshop\RestServices\RestServices\bin\es\System.Web.WebPages.Razor.resources.dll
-E:\Eshop\RestServices\RestServices\obj\Debug\RestServices.csprojAssemblyReference.cache
 E:\Eshop\RestServices\RestServices\obj\Debug\RestServices.csproj.CoreCompileInputs.cache
 E:\Eshop\RestServices\RestServices\obj\Debug\RestServices.csproj.CopyComplete
 E:\Eshop\RestServices\RestServices\obj\Debug\RestServices.dll
 E:\Eshop\RestServices\RestServices\obj\Debug\RestServices.pdb
+E:\Eshop\RestServices\RestServices\obj\Debug\RestServices.csprojAssemblyReference.cache
