@@ -10,6 +10,16 @@ namespace RestServices.Models
      //   dirección (Provincia, cantón, distrito), Fecha de nacimiento, teléfono, usuario y password.
     public class Customer
     {
+        public Customer(int id, string name, string lastName, string address, int phone, string userName, int password)
+        {
+            this.id = id;
+            this.name = name;
+            this.lastName = lastName;
+            this.address = address;
+            this.phone = phone;
+            this.userName = userName;
+            this.password = password;
+        }
 
         public int id { get; set; }           // Número Cédula
 

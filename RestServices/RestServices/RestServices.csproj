@@ -201,10 +201,10 @@
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\CollectionModelDescription.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\DisplayTemplates\ApiGroup.cshtml" />
     <Content Include="Areas\HelpPage\Views\Help\Api.cshtml" />
-    <Content Include="JsonDataBase\categoyManagement.json" />
-    <Content Include="JsonDataBase\farmers.json" />
-    <Content Include="JsonDataBase\products.json" />
-    <Content Include="JsonDataBase\customer.json" />
+    <Content Include="DataBase\categoyManagement.json" />
+    <Content Include="DataBase\farmers.json" />
+    <Content Include="DataBase\products.json" />
+    <Content Include="DataBase\customer.json" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -284,6 +284,7 @@
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
+      <UserProperties database_4customer_1json__JsonSchema="http://json.schemastore.org/apibuilder.json" />
     </VisualStudio>
   </ProjectExtensions>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

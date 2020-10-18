@@ -3,7 +3,20 @@ using System;
 namespace RestServices.Models
 {
     public class Farmers{
-        
+        public Farmers(int id, string name, string lastName, string address,int sinpe , int phone,string place, string userName, int password)
+        {
+            this.id = id;
+            this.name = name;
+            this.lastName = lastName;
+            this.address = address;
+            this.sinpe = sinpe;
+            this.phone = phone;
+            this.places = place;
+
+            this.userName = userName;
+            this.password = password;
+        }
+
         public int id {get; set;}           // Número Cédula
         
         public string name {get; set;}      // Nombre

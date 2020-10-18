@@ -1,0 +1,57 @@
+[
+  {
+    "id": 10,
+    "name": "Josue",
+    "lastName": "Santamaria",
+    "address": "Turrialba",
+    "phone": 8545,
+    "sinpe": 7006,
+    "places": "Suiza",
+    "userName": "RoJo_Savs",
+    "password": 1234
+  },
+  {
+    "id": 11,
+    "name": "Aaron",
+    "lastName": "Santamaria",
+    "address": "Turrialba",
+    "phone": 5978,
+    "sinpe": 1005,
+    "places": "Suiza",
+    "userName": "RipHunter",
+    "password": 4321
+  },
+  {
+    "id": 13,
+    "name": "Andres",
+    "lastName": "Santamaria",
+    "address": "Turrialba",
+    "phone": 2007,
+    "sinpe": 2005,
+    "places": "Turrialba",
+    "userName": "levelz",
+    "password": 2134
+  },
+  {
+    "id": 67,
+    "name": "Allan",
+    "lastName": "Calderon",
+    "address": "Puntarenas",
+    "phone": 45,
+    "sinpe": 15,
+    "places": "Uvita",
+    "userName": "calquito",
+    "password": 12
+  },
+  {
+    "id": 70,
+    "name": "Fabian",
+    "lastName": "Fallas",
+    "address": "Cartago",
+    "phone": 45,
+    "sinpe": 15,
+    "places": "Agua Caliente",
+    "userName": "Fallas",
+    "password": 12
+  }
+]
