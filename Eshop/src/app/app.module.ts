@@ -11,6 +11,7 @@ import { ProductsComponent } from './products/products.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ConfirmComponent } from './confirm/confirm.component';
 import { PaymentComponent } from './payment/payment.component';
+import {FormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -24,10 +25,11 @@ import { PaymentComponent } from './payment/payment.component';
     ConfirmComponent,
     PaymentComponent
   ],
-  imports: [
-    BrowserModule,
-    AppRoutingModule
-  ],
+    imports: [
+        BrowserModule,
+        AppRoutingModule,
+        FormsModule
+    ],
   providers: [],
   bootstrap: [AppComponent]
 })

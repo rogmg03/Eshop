@@ -1,4 +1,4 @@
-<header>
+<header xmlns="http://www.w3.org/1999/html">
   <!-- Header Start -->
 
 
@@ -115,11 +115,15 @@
                   <input type="checkbox" id="f-option" name="selector">
                   <label for="f-option">Recordar contraseña</label>
                 </div>
-                <button type="submit" value="submit" class="btn_3">
-                  Iniciar sesión
+                <button type="button" id="loginbutton" data-toggle="modal"
+                        style="outline: none ;background-color: rgba(0,0,0,0); border: rgba(0,0,0,0)"
+                        >
+                  <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger">Iniciar sesión</a>
                 </button>
-                <button type="submit" value="submit" class="btn_3">
-                  Crear cuenta
+                <button type="button" id="createbutton" data-toggle="modal"
+                        style="outline: none ;background-color: rgba(0,0,0,0); border: rgba(0,0,0,0)"
+                        data-target="#yourModal">
+                  <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger">Crear Cuenta</a>
                 </button>
                 <a class="lost_pass" href="#">Olvido su contraseña?</a>
               </div>
@@ -129,4 +133,118 @@
       </div>
     </div>
   </div>
+
+
+
 </section>
+<div id="yourModal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <!-- Modal content-->
+    <div class="wrapper fadeInDown modal-content" id="login" style="background: rgba(0,0,0,0); border: none" >
+      <div class="modal-header" style="margin-left: 70%; margin-bottom: -50px;z-index: 200">
+        <button type="button" class="close" data-dismiss="modal">&times;</button>
+      </div>
+      <div id="formContent">
+        <!-- Login Form -->
+
+        <form id="form2" style="margin-top: 50px">
+
+          <label>Número de Cédula</label><input type="text">
+          <label>Nombre</label><input type="text">
+          <label>Apellidos</label><input type="text">
+          <label>Provincia</label><input type="text">
+          <label>Cantón </label><input type="text">
+          <label>Fecha de nacimiento</label><input type="date">
+          <label>Teléfono</label><input type="text">
+          <label>Número Sinpe</label><input type="text">
+          <label>Lugar de entraga</label><input type="text">
+          <label>Usuario</label><input type="text">
+          <label>Contraseña</label><input type="text">
+          <label>Repita Contraseña</label><input type="text">
+          <label>Es Productor?</label><input type="checkbox">
+          <div>
+          <button type="button" id="create" data-toggle="modal"
+                  style="outline: none ;background-color: rgba(0,0,0,0); border: rgba(0,0,0,0)"
+                  data-target="#yourModal">
+            <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger">Crear Cuenta</a>
+          </button>
+          </div>
+
+        </form>
+        <script>
+          $(document).ready(function () {
+            var date_input = $('input[name="date"]'); //our date input has the name "date"
+            var container = $('#form2').length > 0 ? $('#form2').parent() : "body";
+            date_input.datepicker({
+              format: 'mm/dd/yyyy',
+              container: container,
+              todayHighlight: true,
+              autoclose: true,
+            })
+          })
+        </script>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+<style>
+
+
+  .modalDialog {
+    position: fixed;
+    font-family: Arial, Helvetica, sans-serif;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: rgba(0,0,0,0.8);
+    z-index: 99999;
+    opacity:0;
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+    pointer-events: none;
+  }
+  .modalDialog:target {
+    opacity:1;
+    pointer-events: auto;
+  }
+  .modalDialog > div {
+    width: 400px;
+    position: relative;
+    margin: 10% auto;
+    padding: 5px 20px 13px 20px;
+    border-radius: 10px;
+    background: #fff;
+    background: -moz-linear-gradient(#fff, #999);
+    background: -webkit-linear-gradient(#fff, #999);
+    background: -o-linear-gradient(#fff, #999);
+    -webkit-transition: opacity 400ms ease-in;
+    -moz-transition: opacity 400ms ease-in;
+    transition: opacity 400ms ease-in;
+  }
+  .close {
+    background: #606061;
+    color: #FFFFFF;
+    line-height: 25px;
+    position: absolute;
+    right: -12px;
+    text-align: center;
+    top: -10px;
+    width: 24px;
+    text-decoration: none;
+    font-weight: bold;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    border-radius: 12px;
+    -moz-box-shadow: 1px 1px 3px #000;
+    -webkit-box-shadow: 1px 1px 3px #000;
+    box-shadow: 1px 1px 3px #000;
+  }
+  .close:hover { background: #00d9ff; }
+
+</style>
+
