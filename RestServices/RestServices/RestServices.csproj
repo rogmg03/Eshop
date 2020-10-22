@@ -166,7 +166,7 @@
     </Compile>
     <Compile Include="Models\CategoryManagement.cs" />
     <Compile Include="Models\Customer.cs" />
-    <Compile Include="Models\Farmers.cs" />
+    <Compile Include="Models\Farmer.cs" />
     <Compile Include="Models\Products.cs" />
     <Compile Include="Models\TodoItem.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -284,7 +284,7 @@
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
-      <UserProperties database_4customer_1json__JsonSchema="http://json.schemastore.org/apibuilder.json" />
+      <UserProperties database_4customer_1json__JsonSchema="http://json.schemastore.org/apibuilder.json" database_4farmers_1json__JsonSchema="http://json.schemastore.org/apibuilder.json" />
     </VisualStudio>
   </ProjectExtensions>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

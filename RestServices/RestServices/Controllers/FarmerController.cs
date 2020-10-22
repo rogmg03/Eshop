@@ -8,7 +8,11 @@ namespace RestServices.Controllers
     
     public class FarmerController : ApiController
     {
-       
+
+        /*
+         * Esta clase provee  metodos  que se encarguen  de  creación, actualización y eliminación de productores.
+         */
+
 
         [Route("api/farmers/Post")]
         [HttpPost]
@@ -38,11 +42,10 @@ namespace RestServices.Controllers
 
             var convertedJson = JsonConvert.SerializeObject(new Farmers(model.id, model.name, model.lastName, model.address, model.sinpe, model.phone, model.places, model.userName, model.password)
 , Formatting.Indented);
+          
             System.IO.File.WriteAllText(@"E:\Eshop\RestServices\RestServices\DataBase\farmers.json", convertedJson.ToString());
 
-
-
-            return Ok("SE INSERTÓ CLIENTE");
+            return Ok("SE INSERTÓ agricultor");
         }
 
 
@@ -67,7 +70,9 @@ namespace RestServices.Controllers
 
         [Route("api /CountUsers")]
         [HttpGet]
-
+        /*
+         * este metodo toma la cantidad de usuarios que se han registrado y lo retorna.
+         */
         public int getSize()
         {
             string json = System.IO.File.ReadAllText(@"E:\Eshop\RestServices\RestServices\DataBase\farmers.json");
@@ -77,7 +82,7 @@ namespace RestServices.Controllers
 
         [Route("api/names")]
         [HttpGet]
-
+        // devulve el número de  agricultores almacenados.
         public IEnumerable<string> FarmerNames()
         {
             int size = getSize();
@@ -94,7 +99,12 @@ namespace RestServices.Controllers
         }
 
         [Route("api/actualizar")]
-        [HttpPut]
+     
+        /*
+         * Este metodo se enca se encarga de poder realizar  una actualización de datos de los agricultores en caso de  que este
+         * necesitara poder realizar algun cambio, este primero debe poder consultar si en  este  se encuentra  registrado en la base de  de datos.
+         *  en caso contrario este  devuelve in mensaje de error
+         */
         public IHttpActionResult Update(Farmers farmers)
         {
             int size = getSize();
@@ -125,6 +135,7 @@ namespace RestServices.Controllers
 
                     string output = Newtonsoft.Json.JsonConvert.SerializeObject(array, Newtonsoft.Json.Formatting.Indented);
                     System.IO.File.WriteAllText(@"E:\Eshop\RestServices\RestServices\DataBase\farmers.json", output);
+                    return Ok("  se ha actualizadoel cliente: " + farmers.name);
 
 
 

@@ -9,7 +9,7 @@ namespace RestServices.Models
    //     de clientes.Los principales datos de los clientes son: Número Cédula, Nombre, Apellidos,
      //   dirección (Provincia, cantón, distrito), Fecha de nacimiento, teléfono, usuario y password.
     public class Customer
-    {
+    { // constructor para inicializar los  valores del objeto JSON
         public Customer(int id, string name, string lastName, string address, int phone, string userName, int password)
         {
             this.id = id;

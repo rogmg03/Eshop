@@ -1,8 +1,6 @@
-﻿using System;
+﻿
 using System.Collections.Generic;
-using System.Linq;
-using System.Net;
-using System.Net.Http;
+
 using System.Web.Http;
 using RestServices.Models;
 using Newtonsoft.Json;
@@ -22,7 +20,7 @@ namespace RestServices.Controllers
             {
                 int size = getSize();
                 Products[] products = new Products[size];
-                string json = System.IO.File.ReadAllText(@"./JsonDataBase/products.json");
+                string json = System.IO.File.ReadAllText(@"E:\Eshop\RestServices\RestServices\DataBase\products.json");
                 dynamic array = JsonConvert.DeserializeObject(json);
                 for (int index = 0; index < size; index++)
                 {
@@ -31,53 +29,96 @@ namespace RestServices.Controllers
                 }
                 return products;
             }
+
+
+
+            /*
+             * este metodo toma la cantidad de productos que se insertaron funcionalidad para saber si aun  
+             * queda en la base de datos algun prodcuto almacenado.
+             */
+            [Route("api/products/count")]
+            [HttpGet]
             public int getSize()
             {
-                string json = System.IO.File.ReadAllText(@"./JsonDataBase/products.json");
+                string json = System.IO.File.ReadAllText(@"E:\Eshop\RestServices\RestServices\DataBase\products.json");
                 dynamic array = JsonConvert.DeserializeObject(json);
                 return array.Count;
             }
+
+            //////////////////estoy aqui//////////////////////////////////////
+
+
+
+
+            [Route("api /name/products")]
+            [HttpGet]
+            // devulve el número de  productos almacenados.
+            public IEnumerable<string> Products()
+            {
+                int size = getSize();
+                string[] listProducts = new string[size];
+                string json = System.IO.File.ReadAllText(@"E:\Eshop\RestServices\RestServices\DataBase\products.json");
+                dynamic array = JsonConvert.DeserializeObject(json);
+
+                for (int index = 0; index < size; index++)
+                {
+                    Products p = JsonConvert.DeserializeObject<Products>(array[index].ToString());
+                    listProducts[index] = p.name;
+                }
+                return listProducts;
+            }
+
+            /*
+            * Este metodo se enca se encarga de poder realizar  una actualización de datos de los prodcutos en caso de haber cometido un error en su inserción
+
+            */
+            [Route("api/products/update")]
+            [HttpPut]
+           
+            public void Update(Products product)
+            {
+                int size = getSize();
+                string json = System.IO.File.ReadAllText(@"E:\Eshop\RestServices\RestServices\DataBase\products.json");
+                dynamic array = JsonConvert.DeserializeObject(json);
+                for (int index = 0; index < size; index++)
+                {
+                    Products lisP = JsonConvert.DeserializeObject<Farmers>(array[index].ToString());
+                    if (lisP.category == product.category)
+                    {
+                        array[index]["category"] = product.category;
+                        array[index]["picture"] = product.picture;
+                        array[index]["cost"] = product.cost;
+                        array[index]["sellMode"] = product.sellMode;
+                        array[index]["amount"] = product.amount;
+                        string output = Newtonsoft.Json.JsonConvert.SerializeObject(array, Newtonsoft.Json.Formatting.Indented);
+                        System.IO.File.WriteAllText(@"E:\Eshop\RestServices\RestServices\DataBase\products.json", output);
+                      //  return Ok("  se ha actualizadoel cliente: " + product.name);
+
+                    }
+                    else {
+                       // return Ok("el dato no hace match con la base de datos");
+                    }
+
+                }
+              
+
+
+            }
         }
     }
-
-    // Products[] products = new Products[]{
-    //     new Products {Code = "111111", Description = "BARILLA FARINA 1 KG", Um = "PZ", PcCart = 24, NetWeight = 1, Price = 1.09 },
-    //     new Products {Code = "013500121", Description = "BARILLA PASTA GR.500 N.70 1/2 PENNE", Um = "PZ", PcCart = 30, NetWeight = 0.5, Price = 1.3 },
-    //     new Products {Code = "007686402", Description = "FINDUS FIOR DI NASELLO 300 GR", Um = "PZ", PcCart = 8, NetWeight = 0.3, Price = 6.46 },
-    //     new Products {Code = "057549001", Description = "FINDUS CROCCOLE 400 GR", Um = "PZ", PcCart = 12, NetWeight = 0.4, Price = 5.97 }
-    // };
-
-    // [HttpGet]
-    // public IEnumerable<Products> ListAllProducts(){
-    //     // string jsonString = File.ReadAllText("./test.json");
-    //     // weatherForecast = JsonSerializer.Deserialize<WeatherForecast>(jsonString);
-    //     // return jsonString;
-    //     return products;
-    // }
-
-    // [HttpGet("code/{codart}")]
-    // public IEnumerable<Products> ListProductsByCode(string codart){
-    //      IEnumerable<Products> retVal =
-    //         from g in products 
-    //         where g.Code.Equals(codart) 
-    //         select g;
-
-    //     return retVal;
-
-    // }
-
-    // [HttpGet("description/{desart}")]
-    // public IEnumerable<Products> ListProductsByDescription(string desart){
-    //     IEnumerable<Products> retVal = 
-    //         from g in products
-    //         where g.Description.ToUpper().Contains(desart.ToUpper())
-    //         orderby g.Code
-    //         select g;
-
-    //     return retVal;
-    // }
-
-
-
-
 }
+
+
+
+        ///////////////////////////////////////////////////////
+
+
+
+
+
+    
+
+
+
+
+

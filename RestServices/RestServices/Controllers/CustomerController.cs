@@ -10,18 +10,28 @@ using RestServices.Models;
 
 namespace RestServices.Controllers
 {
+    /*
+     *Esta blase se encarga de  gestionar los objetos de la clase Cliente ubicada en la sección  de Models, donde mediante el protocolo http
+     *se comunica mediante el API con la seecion del Model y del view del frontEnd.
+     * 
+     * 
+
+      */
     public class CustomerController : ApiController
     {
 
 
-        [Route("api/customers/getAll")]
+        [Route("api/customers/get")]
         [HttpGet]
-        // este metodo se encarga de enviar todos  los agritucores registrados
+        /*
+         * Este método se encarga de obtener todos los valores de los clientes almacenados en un JSON  
+         * 
+         */
         public IEnumerable<Customer> getCustomers()
         {
             int size = getSize();
             Customer[] customerList = new Customer[size];
-            string json = System.IO.File.ReadAllText(@"./JsonDataBase/customer.json");
+            string json = System.IO.File.ReadAllText(@"E:\Eshop\RestServices\RestServices\DataBase\customer.json");
             dynamic array = JsonConvert.DeserializeObject(json);
          
             for (int index = 0; index < size; index++)
@@ -34,25 +44,19 @@ namespace RestServices.Controllers
         }
 
 
-        [Route("api/customers/Post")]
+        [Route("api/customers/post")]
         [HttpPost]
+        /*
+         * Este metodo medainte el protocolo HTTP recibe una serialización de un objeto  tipo Customer,
+         *en este casos  toman los valores  y se insertan en los valores JSON mediante un Constructor
+         */
 
         public IHttpActionResult SetCustomer(Customer model)
         {
 
-           
-            
-
-            string json = System.IO.File.ReadAllText(@"E:\Eshop\RestServices\RestServices\DataBase\customer.json");
-            var list = JsonConvert.DeserializeObject<List<Customer>>(json);
-            list.Add(new Customer(model.id, model.name, model.lastName, model.address, model.phone, model.userName, model.password));
-
-
-           
-            var convertedJson = JsonConvert.SerializeObject(list, Formatting.Indented);
+            string json = System.IO.File.ReadAllText(@"E:\Eshop\RestServices\RestServices\DataBase\customer.json");// se llama al JSON, 
+            var convertedJson = JsonConvert.SerializeObject(new Customer((int)model.id, (string)model.name, (string)model.lastName, (string)model.address, (int)model.phone, (string)model.userName, (int)model.password), Formatting.Indented);
             System.IO.File.WriteAllText(@"E:\Eshop\RestServices\RestServices\DataBase\customer.json", convertedJson.ToString());
-
-
 
             return Ok("SE INSERTÓ CLIENTE");
 
@@ -61,7 +65,7 @@ namespace RestServices.Controllers
 
         [Route("api/customers/count")]
         [HttpGet]
-
+        // se obtiene  la cantidad de  clientes  que se han registrado.
         public int getSize()
         {
             string json = System.IO.File.ReadAllText(@"E:\Eshop\RestServices\RestServices\DataBase\customer.json");
@@ -69,28 +73,58 @@ namespace RestServices.Controllers
             return array.Count;
         }
 
+        /*
+         * devuelve el nombre de los clientes insertados 
+         * 
+         */
         [Route("api/customers/getAllNames")]
         [HttpGet]
 
-        public IEnumerable<string> FarmerNames()
+        public IEnumerable<string> CustomerNames()
         {
             int size = getSize();
             string[] customers = new string[size];
             string json = System.IO.File.ReadAllText(@"E:\Eshop\RestServices\RestServices\DataBase\customer.json");
             dynamic array = JsonConvert.DeserializeObject(json);
-            // List<Farmers> farmers = new List<Farmers>();
-            // foreach(var element in array){    
-            //     farmers.Add(farmer);
-            // } 
+          
             for (int index = 0; index < size; index++)
             {
                 Customer customerNames = JsonConvert.DeserializeObject<Customer>(array[index].ToString());
-
                 customers[index] = customerNames.name + "" + customerNames.lastName;
             }
             return customers;
-            ;
-        }
+    }
+        /*
+         * Este metodo se  encarga de actualizar los valores JSON de algun agricultor en específico
+         */
+        [Route("api/customer/actualizar")]
+        [HttpPut]
 
+        public IHttpActionResult Update(Customer ncustomer)
+        {
+            int size = getSize();
+            string json = System.IO.File.ReadAllText(@"E:\Eshop\RestServices\RestServices\DataBase\farmers.json");
+            dynamic array = JsonConvert.DeserializeObject(json);
+            for (int index = 0; index < size; index++)
+            {
+                Customer farmer = JsonConvert.DeserializeObject<Customer>(array[index].ToString());
+                if (farmer.id == ncustomer.id)
+                {
+                    array[index]["id"] = ncustomer.id;
+                    array[index]["name"] = ncustomer.name;
+                    array[index]["lastName"] = ncustomer.lastName;
+                    array[index]["address"] = ncustomer.address;
+                    array[index]["serName"] = ncustomer.userName;
+                    array[index]["password"] = ncustomer.password;
+                    string output = Newtonsoft.Json.JsonConvert.SerializeObject(array, Newtonsoft.Json.Formatting.Indented);
+                    System.IO.File.WriteAllText(@"E:\Eshop\RestServices\RestServices\DataBase\farmers.json", output);
+                    return Ok("  se ha actualizadoel cliente: " + ncustomer.name);
+                }
+                else { return Ok("el dato no hace match con la base de datos"); }
+ }
+            return Ok("Se insertó el clienter");
+
+
+        }
     }
 }

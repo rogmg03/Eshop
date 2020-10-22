@@ -12,7 +12,6 @@ namespace RestServices.Models
             this.sinpe = sinpe;
             this.phone = phone;
             this.places = place;
-
             this.userName = userName;
             this.password = password;
         }
