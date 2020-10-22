@@ -205,6 +205,7 @@
     <Content Include="DataBase\farmers.json" />
     <Content Include="DataBase\products.json" />
     <Content Include="DataBase\customer.json" />
+    <Content Include="ClassDiagram1.cd" />
     <None Include="Scripts\jquery-3.4.1.intellisense.js" />
     <Content Include="Scripts\jquery-3.4.1.js" />
     <Content Include="Scripts\jquery-3.4.1.min.js" />
@@ -284,7 +285,7 @@
           <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
         </WebProjectProperties>
       </FlavorProperties>
-      <UserProperties database_4customer_1json__JsonSchema="http://json.schemastore.org/apibuilder.json" database_4farmers_1json__JsonSchema="http://json.schemastore.org/apibuilder.json" />
+      <UserProperties database_4farmers_1json__JsonSchema="http://json.schemastore.org/apibuilder.json" database_4customer_1json__JsonSchema="http://json.schemastore.org/apibuilder.json" />
     </VisualStudio>
   </ProjectExtensions>
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

@@ -1,5 +1,54 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="RestServices.Areas.HelpPage.ModelDescriptions.CollectionModelDescription">
+    <Position X="6.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Areas\HelpPage\ModelDescriptions\CollectionModelDescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestServices.Areas.HelpPage.ModelDescriptions.ComplexTypeModelDescription" Collapsed="true">
+    <Position X="8.75" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
+      <FileName>Areas\HelpPage\ModelDescriptions\ComplexTypeModelDescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestServices.Areas.HelpPage.ModelDescriptions.DictionaryModelDescription">
+    <Position X="2.75" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Areas\HelpPage\ModelDescriptions\DictionaryModelDescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestServices.Areas.HelpPage.ModelDescriptions.EnumTypeModelDescription">
+    <Position X="1" Y="3" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Areas\HelpPage\ModelDescriptions\EnumTypeModelDescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestServices.Areas.HelpPage.ModelDescriptions.KeyValuePairModelDescription">
+    <Position X="2.75" Y="3.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
+      <FileName>Areas\HelpPage\ModelDescriptions\KeyValuePairModelDescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestServices.Areas.HelpPage.ModelDescriptions.ModelDescription">
+    <Position X="5.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Areas\HelpPage\ModelDescriptions\ModelDescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestServices.Areas.HelpPage.ModelDescriptions.SimpleTypeModelDescription">
+    <Position X="4.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Areas\HelpPage\ModelDescriptions\SimpleTypeModelDescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
   <Class Name="RestServices.BundleConfig">
     <Position X="2.5" Y="6.75" Width="1.5" />
     <TypeIdentifier>
@@ -28,11 +77,11 @@
       <FileName>App_Start\WebApiConfig.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="RestServices.WebApiApplication">
-    <Position X="4.25" Y="20.5" Width="1.5" />
+  <Class Name="RestServices.Areas.HelpPage.HelpPageConfig">
+    <Position X="2.5" Y="10.25" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
-      <FileName>Global.asax.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Areas\HelpPage\App_Start\HelpPageConfig.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="RestServices.Areas.HelpPage.ApiDescriptionExtensions">
@@ -42,11 +91,11 @@
       <FileName>Areas\HelpPage\ApiDescriptionExtensions.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="RestServices.Areas.HelpPage.HelpPageConfig">
-    <Position X="2.5" Y="10.25" Width="1.5" />
+  <Class Name="RestServices.Areas.HelpPage.Controllers.HelpController">
+    <Position X="7.75" Y="9.75" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Areas\HelpPage\App_Start\HelpPageConfig.cs</FileName>
+      <HashCode>AAAAABAABAAAAAAAAAAAAAAAAAAAAAAAgAEAAAAgAAA=</HashCode>
+      <FileName>Areas\HelpPage\Controllers\HelpController.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="RestServices.Areas.HelpPage.HelpPageAreaRegistration">
@@ -61,6 +110,55 @@
     <TypeIdentifier>
       <HashCode>AAAAAIAABAICACACEAACGSCAAAADABAAAEMAAAAAIEA=</HashCode>
       <FileName>Areas\HelpPage\HelpPageConfigurationExtensions.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestServices.Areas.HelpPage.ModelDescriptions.EnumValueDescription">
+    <Position X="0.75" Y="8" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAgAAAAAAA=</HashCode>
+      <FileName>Areas\HelpPage\ModelDescriptions\EnumValueDescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestServices.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator">
+    <Position X="9.5" Y="16.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAGQBAAJAABAAACBAgAAAAASBAAAAAAAAAEAACAQAAA=</HashCode>
+      <FileName>Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestServices.Areas.HelpPage.ModelDescriptions.ModelNameAttribute">
+    <Position X="9.5" Y="14.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Areas\HelpPage\ModelDescriptions\ModelNameAttribute.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestServices.Areas.HelpPage.ModelDescriptions.ModelNameHelper">
+    <Position X="0.75" Y="19.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
+      <FileName>Areas\HelpPage\ModelDescriptions\ModelNameHelper.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestServices.Areas.HelpPage.ModelDescriptions.ParameterDescription">
+    <Position X="4.25" Y="18" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAACAAAAAAAAAAAAAAAAAQAQAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Areas\HelpPage\ModelDescriptions\ParameterDescription.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestServices.Areas.HelpPage.Models.HelpPageApiModel">
+    <Position X="9.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAGBAAAAAAAAAAAAAgAAAAAAAUBAAAAAQAQAg=</HashCode>
+      <FileName>Areas\HelpPage\Models\HelpPageApiModel.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestServices.Areas.HelpPage.ModelDescriptions.ParameterAnnotation">
+    <Position X="2.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Areas\HelpPage\ModelDescriptions\ParameterAnnotation.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="RestServices.Areas.HelpPage.HelpPageSampleGenerator">
@@ -120,111 +218,6 @@
     </TypeIdentifier>
     <Lollipop Position="0.2" Collapsed="true" />
   </Class>
-  <Class Name="RestServices.Areas.HelpPage.Controllers.HelpController">
-    <Position X="7.75" Y="9.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAABAABAAAAAAAAAAAAAAAAAAAAAAAgAEAAAAgAAA=</HashCode>
-      <FileName>Areas\HelpPage\Controllers\HelpController.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="RestServices.Areas.HelpPage.ModelDescriptions.CollectionModelDescription">
-    <Position X="6.75" Y="3.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Areas\HelpPage\ModelDescriptions\CollectionModelDescription.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="RestServices.Areas.HelpPage.ModelDescriptions.ComplexTypeModelDescription" Collapsed="true">
-    <Position X="8.75" Y="2.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAACAAA=</HashCode>
-      <FileName>Areas\HelpPage\ModelDescriptions\ComplexTypeModelDescription.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="RestServices.Areas.HelpPage.ModelDescriptions.DictionaryModelDescription">
-    <Position X="2.75" Y="5.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Areas\HelpPage\ModelDescriptions\DictionaryModelDescription.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="RestServices.Areas.HelpPage.ModelDescriptions.EnumTypeModelDescription">
-    <Position X="1" Y="3" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAAA=</HashCode>
-      <FileName>Areas\HelpPage\ModelDescriptions\EnumTypeModelDescription.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="RestServices.Areas.HelpPage.ModelDescriptions.EnumValueDescription">
-    <Position X="0.75" Y="8" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAEAAAAAAAgAAAAAAA=</HashCode>
-      <FileName>Areas\HelpPage\ModelDescriptions\EnumValueDescription.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="RestServices.Areas.HelpPage.ModelDescriptions.KeyValuePairModelDescription">
-    <Position X="2.75" Y="3.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAgAAAAA=</HashCode>
-      <FileName>Areas\HelpPage\ModelDescriptions\KeyValuePairModelDescription.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="RestServices.Areas.HelpPage.ModelDescriptions.ModelDescription">
-    <Position X="5.5" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAEAAAAAAAAAAQAAAAEAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Areas\HelpPage\ModelDescriptions\ModelDescription.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="RestServices.Areas.HelpPage.ModelDescriptions.ModelDescriptionGenerator">
-    <Position X="9.5" Y="16.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAGQBAAJAABAAACBAgAAAAASBAAAAAAAAAEAACAQAAA=</HashCode>
-      <FileName>Areas\HelpPage\ModelDescriptions\ModelDescriptionGenerator.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="RestServices.Areas.HelpPage.ModelDescriptions.ModelNameAttribute">
-    <Position X="9.5" Y="14.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Areas\HelpPage\ModelDescriptions\ModelNameAttribute.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="RestServices.Areas.HelpPage.ModelDescriptions.ModelNameHelper">
-    <Position X="0.75" Y="19.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAA=</HashCode>
-      <FileName>Areas\HelpPage\ModelDescriptions\ModelNameHelper.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="RestServices.Areas.HelpPage.ModelDescriptions.ParameterAnnotation">
-    <Position X="2.5" Y="13.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAQAAAAAAAAAAAAEAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Areas\HelpPage\ModelDescriptions\ParameterAnnotation.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="RestServices.Areas.HelpPage.ModelDescriptions.ParameterDescription">
-    <Position X="4.25" Y="18" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAACAAAAAAAAAAAAAAAAAQAQAAEAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Areas\HelpPage\ModelDescriptions\ParameterDescription.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="RestServices.Areas.HelpPage.ModelDescriptions.SimpleTypeModelDescription">
-    <Position X="4.75" Y="3.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Areas\HelpPage\ModelDescriptions\SimpleTypeModelDescription.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="RestServices.Areas.HelpPage.Models.HelpPageApiModel">
-    <Position X="9.5" Y="9" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAGBAAAAAAAAAAAAAgAAAAAAAUBAAAAAQAQAg=</HashCode>
-      <FileName>Areas\HelpPage\Models\HelpPageApiModel.cs</FileName>
-    </TypeIdentifier>
-  </Class>
   <Class Name="RestServices.Controllers.CategoryManagementController">
     <Position X="6" Y="6.75" Width="1.5" />
     <TypeIdentifier>
@@ -274,18 +267,11 @@
       <FileName>Controllers\ProductController.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="RestService.Models.CategoryManagement">
-    <Position X="4.25" Y="6.75" Width="1.5" />
+  <Class Name="RestServices.WebApiApplication">
+    <Position X="4.25" Y="20.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
-      <FileName>Models\CategoryManagement.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="RestService.Models.TodoItem">
-    <Position X="2.5" Y="15.25" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AQACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
-      <FileName>Models\TodoItem.cs</FileName>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAA=</HashCode>
+      <FileName>Global.asax.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="RestServices.Models.Customer">
@@ -293,6 +279,13 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAIEAAAgAAAACgEAAgA=</HashCode>
       <FileName>Models\Customer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestService.Models.CategoryManagement">
+    <Position X="4.25" Y="6.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgA=</HashCode>
+      <FileName>Models\CategoryManagement.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="RestServices.Models.Farmers">
@@ -307,6 +300,13 @@
     <TypeIdentifier>
       <HashCode>AAAAAAAAAIQAAAAAAAAAAAAAAAAUgAAAAAAIAAAAAAA=</HashCode>
       <FileName>Models\Products.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RestService.Models.TodoItem">
+    <Position X="2.5" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQACAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Models\TodoItem.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Interface Name="RestServices.Areas.HelpPage.ModelDescriptions.IModelDocumentationProvider">
