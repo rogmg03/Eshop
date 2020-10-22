@@ -19,10 +19,7 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="99f8f842-cd6e-4b0d-8e52-64d80b3166ae" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Eshop/src/app/Pago/Pago.html" beforeDir="false" afterPath="$PROJECT_DIR$/Eshop/src/app/Pago/Pago.html" afterDir="false" />
-    </list>
+    <list default="true" id="99f8f842-cd6e-4b0d-8e52-64d80b3166ae" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -49,19 +46,19 @@
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\Users\Usuario\Documents\Eshop\Eshop\src\app\DetalleProducto" />
-      <recent name="C:\Users\Usuario\Documents\Eshop\Eshop\src\app\Confirmacion" />
-      <recent name="C:\Users\Usuario\Documents\Eshop\Eshop\src\app\Pago" />
-      <recent name="C:\Users\Usuario\Documents\Eshop\Eshop\src\app\loginview" />
-      <recent name="C:\Users\Usuario\Documents\Eshop\Eshop\src\app" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\Usuario\Documents\Eshop\Eshop\src\app\Productos" />
       <recent name="C:\Users\Usuario\Documents\Eshop\Eshop\src\app" />
       <recent name="C:\Users\Usuario\Documents\Eshop\Eshop\src\app\Carro de compras" />
       <recent name="C:\Users\Usuario\Documents\Eshop\Eshop\src\assets" />
       <recent name="C:\Users\Usuario\Documents\Eshop\Eshop\src\app\Contactenos" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Usuario\Documents\Eshop\Eshop\src\app\DetalleProducto" />
+      <recent name="C:\Users\Usuario\Documents\Eshop\Eshop\src\app\Confirmacion" />
+      <recent name="C:\Users\Usuario\Documents\Eshop\Eshop\src\app\Pago" />
+      <recent name="C:\Users\Usuario\Documents\Eshop\Eshop\src\app\loginview" />
+      <recent name="C:\Users\Usuario\Documents\Eshop\Eshop\src\app" />
     </key>
   </component>
   <component name="RunManager">
